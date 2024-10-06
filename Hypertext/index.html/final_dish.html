@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Final Dish</title>
+</head>
+<body>
+    <h1>Your Club Sandwich is Ready!</h1>
+    <p>Based on your choices, here is your sandwich:</p>
+    <p>
+        - Chicken: 
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const recipe = urlParams.get('recipe');
+            if (recipe === '1') {
+                document.write('Chicken (boiled and shredded) with mayonnaise and veggies.');
+            } else if (recipe === '2') {
+                document.write('Spicy Chicken with various sauces.');
+            }
+        </script>
+    </p>
+    <p>
+        - Cooking Method: 
+        <script>
+            const method = urlParams.get('method');
+            if (method === 'grill') {
+                document.write('Grilled');
+            } else if (method === 'roast') {
+                document.write('Roasted');
+            } else if (method === 'smoke') {
+                document.write('Smoked');
+            }
+        </script>
+    </p>
+    <p>
+        - Assembly: 
+        <script>
+            const layers = urlParams.get('layers');
+            if (layers === 'classic') {
+                document.write('Classic Layering with lettuce, tomato, and cheese.');
+            } else if (layers === 'creative') {
+                document.write('Creative Layering with jalapeños and olives.');
+            }
+        </script>
+    </p>
+    <p>Enjoy your delicious club sandwich!</p>
+    <a href="index.html">Restart</a>
+</body>
+</html>
