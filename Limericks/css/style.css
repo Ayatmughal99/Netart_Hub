@@ -1,0 +1,38 @@
+/* Style for the body */
+body {
+  background-color: #f0e68c; /* Light khaki background */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Style for the h1 */
+h1 {
+  font-style: italic;
+  padding-top: 10px;
+  color: #4682b4; /* Steel blue for h1 text */
+}
+
+/* Style for paragraph text */
+p {
+  font-size: 45px;
+  color: #556b2f; /* Dark olive green for paragraph text */
+}
+
+/* Style for the .title class */
+.title {
+  font-weight: bold;
+  color: #d2691e; /* Chocolate color for the limerick titles */
+}
+
+/* Style for the #theend ID */
+#theend {
+  color: #ff4500; /* Orange red for "The End" */
+}
+
+/* Style for div elements */
+div {
+  padding: 50px;
+  margin: 80px;
+  border: 10px solid #8b4513; /* Saddle brown border for divs */
+  background-color: #faf0e6; /* Linen color for div background */
+}
