@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Planet Adventure</title>
+    <link rel="stylesheet" href="css/galaxy.css">
+    <script src="js/galaxy.js" defer></script>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Alien Planet Adventure</h1>
+        <div id="planet-container">
+            <div id="planet-1" class="planet" onclick="startPlanet1()">Planet 1</div>
+            <div id="planet-2" class="planet" onclick="startPlanet2()">Planet 2</div>
+            <div id="planet-3" class="planet" onclick="startPlanet3()">Planet 3</div>
+        </div>
+        <div id="challenge-container" style="display:none;">
+            <h2 id="planet-title">Solve the Challenge</h2>
+            <p id="challenge-text">Answer the riddle to move to the next planet!</p>
+            <input type="text" id="answer" placeholder="Enter your answer">
+            <button onclick="checkAnswer()">Submit</button>
+            <div id="feedback"></div>
+        </div>
+        <div id="prize-container" style="display:none;">
+            <h2>Congratulations!</h2>
+            <p>You have completed the Alien Planet Adventure!</p>
+            <img src="images/prize.png" alt="Prize" width="200">
+            <p>Your prize is a Galactic Medal!</p>
+            <button onclick="restartGame()">Restart Game</button> <!-- Restart Button -->
+        </div>
+    </div>
+</body>
+</html>
