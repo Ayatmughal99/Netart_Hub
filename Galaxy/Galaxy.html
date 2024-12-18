@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Planet Adventure</title>
+    <link rel="stylesheet" href="css/galaxy.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Alien Planet Adventure</h1>
+        <p id="intro-text">Embark on a galactic journey! There will be five questions, one on each planet. Answer correctly to unlock the next planet and win the ultimate prize at the end!</p>
+        <div id="planet-container">
+            <div class="planet" id="planet-1">?</div>
+            <div class="planet" id="planet-2">?</div>
+            <div class="planet" id="planet-3">?</div>
+            <div class="planet" id="planet-4">?</div>
+            <div class="planet" id="planet-5">?</div>
+        </div>
+
+        <!-- Challenge Container -->
+        <div id="challenge-container">
+            <p id="challenge-text"></p>
+            <input type="text" id="answer-input" placeholder="Your answer here...">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="feedback"></p>
+        </div>
+
+        <!-- Restart Button -->
+        <button id="restart-btn" onclick="restartGame()">Restart Game</button>
+        <div id="reward-message" style="display: none;">
+            <h2>Congratulations! You completed the Alien Planet Adventure!</h2>
+            <p>Sike! There is no surprise, however, you got the knowledge 😅</p>
+            <div id="balloons" style="display: none;">🎈🎉🎈🎉</div>
+        </div>
+    </div>
+
+    <script src="js/galaxy.js"></script>
+</body>
+</html>
